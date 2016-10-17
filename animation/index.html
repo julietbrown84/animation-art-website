@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <meta name="description" content="Demo for tutorial 'Animated Heat Distortion Effects with WebGL'"/>
+    <meta name="keywords" content="heat, haze, effect, webgl, svg, animation, web development, tutorial"/>
+    <meta name="author" content="Lucas Bebber for Codrops"/>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+    <link rel="stylesheet" type="text/css" href="css/demo.css"/>
+    <link rel="stylesheet" type="text/css" href="css/desert.css"/>
+    <link rel="stylesheet" type="text/css" href="css/cooking.css" />
+    <link rel="stylesheet" type="text/css" href="css/flight.css"/>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Vertical navigation dots - fullPage.js</title>
+    <meta name="author" content="Alvaro Trigo Lopez"/>
+    <meta name="description" content="fullPage full-screen sliders navigation widh dots."/>
+    <meta name="keywords"
+          content="fullpage,jquery,demo,screen,fullscreen,sliders navigation, horizontal navigation,horizontal,navigation,dots"/>
+    <meta name="Resource-type" content="Document"/>
+    <meta name="keywords" content="heat, haze, effect, webgl, svg, animation, web development, tutorial"/>
+    <meta name="author" content="Lucas Bebber for Codrops"/>
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <!--[if IE]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+
+    <link rel="stylesheet" type="text/css" href="jquery.fullPage.css"/>
+    <link rel="stylesheet" type="text/css" href="examples.css"/>
+    <style>
+
+    </style>
+
+    <!--[if IE]>
+    <script type="text/javascript">
+        var console = {
+            log: function () {
+            }
+        };
+    </script>
+    <![endif]-->
+
+    <!--[if IE]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+    <script type="text/javascript" src="vendors/scrolloverflow.js"></script>
+
+    <script type="text/javascript" src="jquery.fullPage.js"></script>
+    <script type="text/javascript" src="examples.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#fullpage').fullpage({
+                anchors: ['firstPage', 'secondPage', '3rdPage'],
+                sectionsColor: ['#8FB98B', '#DE564B', '#EAE1C0'],
+                slidesNavigation: true,
+            });
+        });
+    </script>
+</head>
+
+<body class="demo-1">
+<div id="fullpage">
+
+    <div class="container">
+
+        <div class="section " id="section0">
+            <div class="intro">
+
+            </div>
+        </div>
+
+        <div class="section" id="section1">
+            <div class="slide" id="slide1" data-anchor="slide1">
+
+                <div class="demo-2">
+                <div class="container">
+                    <div class="wrap">
+                        <div class="Background">
+                            <canvas class="Background-canvas"></canvas>
+                        </div>
+                        <div class="TextContainer">
+                            <div class="Text">
+                                <canvas class="Text-title"></canvas>
+                                <canvas class="Text-titleMedium" data-breakpoint="1040"></canvas>
+                                <canvas class="Text-titleSmall" data-breakpoint="720"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /container -->
+            </div>
+
+            <div class="slide" id="slide3" data-anchor="slide3"></div>
+
+            <div class="slide" id="slide3" data-anchor="slide3">
+
+                <div class="wrap">
+                    <div class="background">
+                        <canvas class="background__canvas"></canvas>
+                        <canvas class="background__title background__title--big"></canvas>
+                        <canvas class="background__title background__title--medium" data-breakpoint="1000"></canvas>
+                        <canvas class="background__title background__title--small" data-breakpoint="600"></canvas>
+                    </div>
+                    <!-- this is a dummy navigation; the effect of the "Africa" word is done in the canvas, not this nav -->
+                    <nav class="dummynav"></nav>
+                </div>
+
+                <header class="intro">
+                    <div class="intro__content">
+
+                    </div>
+                </header>
+            </div>
+            <!-- /container -->
+            <script src="js/desert.js"></script>
+            <script src="js/flight.js"></script>
+    </body>
+
+</html>
